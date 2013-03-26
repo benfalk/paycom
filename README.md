@@ -1,6 +1,7 @@
 # Paycom
 
-TODO: Write a gem description
+This gem interfaces with the paycom system and allows you to do
+common tasks against it without having to use their website.
 
 ## Installation
 
@@ -18,7 +19,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+
+require 'paycom'
+
+login = Paycom::Login.new 'user_name', 'password', 'ssn_last_four_digits'
+
+# This will fill out the week vanillia style
+Paycom.week_punch login, Date.today
+
+# This will fill out next week
+Paycom.week_punch login, 1.week.from_now
+
+```
 
 ## Contributing
 
