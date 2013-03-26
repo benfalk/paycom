@@ -11,8 +11,8 @@ Gem::Specification.new do |gem|
   gem.authors       = ['Benjamin Falk']
   gem.email         = ['benjamin.falk@yahoo.com']
   gem.description   = %q{Used to do basic interaction with the unsightly Paycom website}
-  gem.summary       = %q{Used to do basic interaction with the unsightly Paycom website}
-  gem.homepage      = ''
+  gem.summary       = %q{Crude Paycom Lib}
+  gem.homepage      = 'https://github.com/benfalk/paycom'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
